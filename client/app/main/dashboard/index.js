@@ -1,0 +1,19 @@
+;(function () {
+    'use strict'
+
+    var angular = window.angular
+
+    angular
+        .module('lefttime.app')
+        .config(Config)
+
+    function Config ($stateProvider) {
+        $stateProvider
+            .state('main.dashboard', {
+                url: '/dashboard',
+                templateUrl: 'app/main/dashboard/dashboard.html',
+                controller: 'DashboardCtrl',
+                controllerAs: 'vm'
+            })
+    }
+})()
