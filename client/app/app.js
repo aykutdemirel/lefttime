@@ -10,7 +10,6 @@
         'ngResource',
         'ngSanitize',
         'ui.router',
-        'ui.bootstrap',
         'ui.utils',
         'restangular',
         'angular-loading-bar',

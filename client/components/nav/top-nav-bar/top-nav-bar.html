@@ -1,26 +1,1272 @@
-﻿<nav class="navbar navbar-default top-menu header" ng-controller="NavCtrl as vm">
-    <div class="container-fluid">
-        <div class="pull-left">
-            <a class="leftSideBtn">
-                <i class="fa fa-bars pull-left"></i>
-            </a>
+﻿<header id="header" ng-controller="NavCtrl as vm">
+    <div id="header-top">
+        <div class="inner wrapper">
+            <div class="row collapse">
+                <div id="mobile-button" class="small-2 medium-3 large-1 column">
+                    <button type="button" data-toggle="offCanvas">menu</button>
+                </div>
+                <div id="social-media" class="large-3 column show-for-large">
+                    <div id="block-socialmedialinks"
+                         class="block block-social-media-links social-media-links-block block-social-media-links">
+                        <div class="inner">
+                            <div class="content clearfix">
+                                <ul class="platforms inline horizontal">
+                                    <li>
+                                        <a href="https://www.facebook.com/https://www.facebook.com/example">
+                                            <span class='fa fa-facebook fa-lg'></span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://plus.google.com/https://plus.google.com/example">
+                                            <span class='fa fa-google-plus fa-lg'></span>
+                                        </a></li>
+                                    <li>
+                                        <a href="http://www.linkedin.com/http://www.linkedin.com/example">
+                                            <span class='fa fa-linkedin fa-lg'></span>
+                                        </a></li>
+                                    <li>
+                                        <a href="http://www.pinterest.com/http://www.pinterest.com/example">
+                                            <span class='fa fa-pinterest fa-lg'></span>
+                                        </a></li>
+                                    <li>
+                                        <a href="https://www.twitter.com/https://www.twitter.com/example">
+                                            <span class='fa fa-twitter fa-lg'></span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="site-info" class="small-10 medium-6 large-4 column text-center">
+                    <div>
+                        <div class="site-logo">
+                            <a href="/demo/portal/news/" title="Home" rel="home">
+                                <img src="../../assets/img/general/logo_0.png" alt="Home"/>
+                            </a>
+                        </div>
+                        <div class="site-slogan">
+                            Get the latest news, trend &amp; hot destination!
+                        </div>
+                    </div>
+                </div>
+                <div id="menu-sub" class="medium-3 large-4 column show-for-medium text-right">
+                    <a class="button rounded login show-for-large"
+                       href="/demo/portal/news/user">Login</a>
+                    <a class="button rounded register show-for-large"
+                       href="/demo/portal/news/user/register">Sign Up</a>
+                </div>
+            </div>
         </div>
-        <div class="logo-panel">
-            <a class="logo" href="/dashboard"><img src="../../assets/img/general/logo.png" /></a>
-        </div>
-
-        <div ncy-breadcrumb class="breadcrumbs hidden-xs"></div>
-
-
-        <div ng-if="vm.user" class="user-menu" uib-dropdown keyboard-nav>
-            <a id="simple-btn-keyboard-nav" class="user-name" uib-dropdown-toggle>
-                <i class="fa fa-user"></i> <span>{{vm.name}} <small>({{vm.userName}})</small></span> <i class="fa fa-angle-down pull-right"></i>
-            </a>
-            <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="simple-btn-keyboard-nav">
-                <li role="menuitem"><a><i class="fa fa-cog"></i> Ayarlar</a></li>
-                <li role="menuitem"><a ng-click="vm.logout()"><i class="fa fa-power-off"></i> Çıkış yap</a></li>
-            </ul>
-        </div>
-         
     </div>
-</nav>
+    <div id="header-middle" class="show-for-large">
+        <div class="inner wrapper">
+            <div id="menu-mega">
+                <div class="menu-centered">
+                    <ul class="dropdown menu" data-dropdown-menu>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/">Features</a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <div id="block-megamenumergefeatures"
+                                         class="block block-custom block-merging merging-horizontal ">
+                                        <div class="inner  without-padding without-collapse">
+                                            <div class="unexpended row uncollapse">
+                                                <div class="medium-6 large-2 column">
+                                                    <nav role="navigation"
+                                                         aria-labelledby="block-megamenufeature-menu"
+                                                         id="block-megamenufeature" class="block">
+                                                        <div class="inner">
+                                                            <h2 class="visually-hidden"
+                                                                id="block-megamenufeature-menu">Mega
+                                                                menu - feature</h2>
+                                                            <ul class="vertical menu">
+                                                                <li>
+                                                                    <a href="/demo/portal/news/post"
+                                                                       data-drupal-link-system-path="post">Front
+                                                                        page by default</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/post-list"
+                                                                       data-drupal-link-system-path="post-list">Front
+                                                                        page by list</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/post-category"
+                                                                       data-drupal-link-system-path="post-category"
+                                                                       class="is-active">Front page by
+                                                                        category</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="medium-6 large-10 column">
+                                                    <div id="block-views-block-portal-block-mega-menu-block-1"
+                                                         class="block block-views views-blockportal-block-mega-menu-block-1 views-element-container">
+                                                        <div class="inner">
+                                                            <div class="content clearfix">
+                                                                <div>
+                                                                    <div class="block-mega-menu js-view-dom-id-d58742db770710e2bea8ba7376790df42a33caee15da168734027bdc62341f75">
+                                                                        <div class="row large-up-3 xlarge-up-4 xxlarge-up-5">
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/40"><img
+                                                                                            src="../../assets/img/general/travel_1.jpg?itok=XErpk1ZM"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Aenean ante massa, vulputate ac sodales sed, malesuada."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/3"
+                                                                                                            hreflang="en">travel</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/40"
+                                                                                       hreflang="en">Aenean
+                                                                                        ante massa,
+                                                                                        vulputate ac
+                                                                                        sodales sed,
+                                                                                        malesuada.</a>
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/36">
+                                                                                        <img src="../../assets/img/general/news_2.jpg?itok=73zoYzM7"
+                                                                                             width="210"
+                                                                                             height="210"
+                                                                                             alt="Fusce lacinia, elit at fermentum viverra, tellus laoreet est."
+                                                                                             typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/1"
+                                                                                                            hreflang="en">news</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/36"
+                                                                                       hreflang="en">Fusce
+                                                                                        lacinia, elit at
+                                                                                        fermentum
+                                                                                        viverra, tellus
+                                                                                        laoreet est.</a>
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/37">
+                                                                                        <img src="../../assets/img/general/business_1.jpg?itok=ymuoGOUx"
+                                                                                             width="210"
+                                                                                             height="210"
+                                                                                             alt="Proin elit lorem, laoreet a lacinia in, vitae purus."
+                                                                                             typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right">
+                                                                                                        <a href="/demo/portal/news/taxonomy/term/2"
+                                                                                                           hreflang="en">business</a>
+                                                                                                    </span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/37"
+                                                                                       hreflang="en">Proin
+                                                                                        elit lorem,
+                                                                                        laoreet a
+                                                                                        lacinia in,
+                                                                                        vitae purus.</a>
+                                                                                </h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/34">
+                                                                                        <img src="../../assets/img/general/life_7.jpg?itok=cJSoP_3K"
+                                                                                             width="210"
+                                                                                             height="210"
+                                                                                             alt="In hac habitasse platea dictumst, blandit venenatis auctor."
+                                                                                             typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/4"
+                                                                                                            hreflang="en">life</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/34"
+                                                                                       hreflang="en">In
+                                                                                        hac habitasse
+                                                                                        platea dictumst,
+                                                                                        blandit
+                                                                                        venenatis
+                                                                                        auctor.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/18">
+                                                                                        <img src="../../assets/img/general/auto_6.jpg?itok=J11wPRWT"
+                                                                                             width="210"
+                                                                                             height="210"
+                                                                                             alt="Sed aliquet, justo vel aliquet interdum, metus nulla."
+                                                                                             typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right">
+                                                                                                        <a href="/demo/portal/news/taxonomy/term/5"
+                                                                                                           hreflang="en">auto</a>
+                                                                                                    </span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/18"
+                                                                                       hreflang="en">Sed
+                                                                                        aliquet, justo
+                                                                                        vel aliquet
+                                                                                        interdum, metus
+                                                                                        nulla.</a></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/taxonomy/term/1">News</a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <div id="block-megamenumergenews"
+                                         class="block block-custom block-merging merging-horizontal ">
+                                        <div class="inner  without-padding without-collapse">
+                                            <div class="unexpended row uncollapse">
+                                                <div class="medium-6 large-2 column">
+                                                    <nav role="navigation"
+                                                         aria-labelledby="block-megamenunews-menu"
+                                                         id="block-megamenunews" class="block">
+                                                        <div class="inner">
+                                                            <h2 class="visually-hidden"
+                                                                id="block-megamenunews-menu">Mega menu -
+                                                                news</h2>
+                                                            <ul class="vertical menu">
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/26"
+                                                                       data-drupal-link-system-path="taxonomy/term/26">City</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/22"
+                                                                       data-drupal-link-system-path="taxonomy/term/22">Construction</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/43"
+                                                                       data-drupal-link-system-path="taxonomy/term/43">Entertainment</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/17"
+                                                                       data-drupal-link-system-path="taxonomy/term/17">Public
+                                                                        Safety</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/25"
+                                                                       data-drupal-link-system-path="taxonomy/term/25">Smart
+                                                                        Phone</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/20"
+                                                                       data-drupal-link-system-path="taxonomy/term/20">Space</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="medium-6 large-10 column">
+                                                    <div id="block-views-block-portal-block-mega-menu-block-2"
+                                                         class="block block-views views-blockportal-block-mega-menu-block-2 views-element-container">
+                                                        <div class="inner">
+                                                            <div class="content clearfix">
+                                                                <div>
+                                                                    <div class="block-mega-menu js-view-dom-id-9ca2cf272f9a2d1be458df50467fe0578408a16f787bfbde10c629e54209e460">
+                                                                        <div class="row large-up-3 xlarge-up-4 xxlarge-up-5">
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/31"><img
+                                                                                            src="../../assets/img/general/news_3.jpg?itok=9P4tOFD3"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Quisque justo turpis, ultrices quis laoreet at, nec est."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/1"
+                                                                                                            hreflang="en">news</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/31"
+                                                                                       hreflang="en">Quisque
+                                                                                        justo turpis,
+                                                                                        ultrices quis
+                                                                                        laoreet at, nec
+                                                                                        est.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/16"><img
+                                                                                            src="../../assets/img/general/news_7.jpg?itok=AFQ_drlv"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Curabitur justo nulla, dapibus tempus gravida et."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/1"
+                                                                                                            hreflang="en">news</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/16"
+                                                                                       hreflang="en">Curabitur
+                                                                                        justo nulla,
+                                                                                        dapibus tempus
+                                                                                        gravida et.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/6"><img
+                                                                                            src="../../assets/img/general/news_8.jpg?itok=hDPbZu_g"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Quisque vulputate cursus vehicula, mauris vitae."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/1"
+                                                                                                            hreflang="en">news</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/6"
+                                                                                       hreflang="en">Quisque
+                                                                                        vulputate cursus
+                                                                                        vehicula, mauris
+                                                                                        vitae.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/1"><img
+                                                                                            src="../../assets/img/general/news_5.jpg?itok=u18IR4py"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Suspendisse mollis lectus id sapien pulvinar."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/1"
+                                                                                                            hreflang="en">news</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/1"
+                                                                                       hreflang="en">Suspendisse
+                                                                                        mollis lectus id
+                                                                                        sapien
+                                                                                        pulvinar.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/52"><img
+                                                                                            src="../../assets/img/general/news_9.jpg?itok=Hn27hnyp"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Aenean eget turpis in risus ullamcorper facilisis eget velit."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/1"
+                                                                                                            hreflang="en">news</a></span>
+                                                                                    Jan 05, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/52"
+                                                                                       hreflang="en">Aenean
+                                                                                        eget turpis in
+                                                                                        risus
+                                                                                        ullamcorper
+                                                                                        facilisis eget
+                                                                                        velit.</a></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/taxonomy/term/2">Business</a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <div id="block-megamenumergebusiness"
+                                         class="block block-custom block-merging merging-horizontal ">
+                                        <div class="inner  without-padding without-collapse">
+                                            <div class="unexpended row uncollapse">
+                                                <div class="medium-6 large-2 column">
+                                                    <nav role="navigation"
+                                                         aria-labelledby="block-megamenubusiness-menu"
+                                                         id="block-megamenubusiness" class="block">
+                                                        <div class="inner"><h2 class="visually-hidden"
+                                                                               id="block-megamenubusiness-menu">
+                                                            Mega menu - business</h2>
+                                                            <ul class="vertical menu">
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/21"
+                                                                       data-drupal-link-system-path="taxonomy/term/21">Airline</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/30"
+                                                                       data-drupal-link-system-path="taxonomy/term/30">Computer</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/16"
+                                                                       data-drupal-link-system-path="taxonomy/term/16">Mobile</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/29"
+                                                                       data-drupal-link-system-path="taxonomy/term/29">Network</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/14"
+                                                                       data-drupal-link-system-path="taxonomy/term/14">Technology</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/15"
+                                                                       data-drupal-link-system-path="taxonomy/term/15">Transport</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="medium-6 large-10 column">
+                                                    <div id="block-views-block-portal-block-mega-menu-block-3"
+                                                         class="block block-views views-blockportal-block-mega-menu-block-3 views-element-container">
+                                                        <div class="inner">
+                                                            <div class="content clearfix">
+                                                                <div>
+                                                                    <div class="block-mega-menu js-view-dom-id-e3c26cfda933943a9fc780a0c77cba3890c1545a285f53c51cf688d241920dce">
+                                                                        <div class="row large-up-3 xlarge-up-4 xxlarge-up-5">
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/17"><img
+                                                                                            src="../../assets/img/general/business_5.jpg?itok=ge70jZkB"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Etiam purus sapien, pellentesque nec bibendum at."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/2"
+                                                                                                            hreflang="en">business</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/17"
+                                                                                       hreflang="en">Etiam
+                                                                                        purus sapien,
+                                                                                        pellentesque nec
+                                                                                        bibendum at.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/12"><img
+                                                                                            src="../../assets/img/general/business_6.jpg?itok=ah1g2nwE"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Nullam at turpis at sem vehicula condimentum."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/2"
+                                                                                                            hreflang="en">business</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/12"
+                                                                                       hreflang="en">Nullam
+                                                                                        at turpis at sem
+                                                                                        vehicula
+                                                                                        condimentum.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/7"><img
+                                                                                            src="../../assets/img/general/business_8.jpg?itok=o4jV9Eft"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Nunc sed elit nec urna interdum sagittis nec a justo."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/2"
+                                                                                                            hreflang="en">business</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/7"
+                                                                                       hreflang="en">Nunc
+                                                                                        sed elit nec
+                                                                                        urna interdum
+                                                                                        sagittis nec a
+                                                                                        justo.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/2"><img
+                                                                                            src="../../assets/img/general/business_7.jpg?itok=t1GUrL-6"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Sed pulvinar mi sit amet mi elementum volutpat."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/2"
+                                                                                                            hreflang="en">business</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/2"
+                                                                                       hreflang="en">Sed
+                                                                                        pulvinar mi sit
+                                                                                        amet mi
+                                                                                        elementum
+                                                                                        volutpat.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/50"><img
+                                                                                            src="../../assets/img/general/business_9.jpg?itok=exr_1FnR"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Vestibulum dui est in iaculis eu, posuere at quam."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/2"
+                                                                                                            hreflang="en">business</a></span>
+                                                                                    Jan 05, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/50"
+                                                                                       hreflang="en">Vestibulum
+                                                                                        dui est in
+                                                                                        iaculis eu,
+                                                                                        posuere at
+                                                                                        quam.</a></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/taxonomy/term/5">Auto</a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <div id="block-megamenumergeauto"
+                                         class="block block-custom block-merging merging-horizontal ">
+                                        <div class="inner  without-padding without-collapse">
+                                            <div class="unexpended row uncollapse">
+                                                <div class="medium-6 large-2 column">
+                                                    <nav role="navigation"
+                                                         aria-labelledby="block-megamenuauto-menu"
+                                                         id="block-megamenuauto" class="block">
+                                                        <div class="inner">
+                                                            <h2 class="visually-hidden"
+                                                                id="block-megamenuauto-menu">Mega menu -
+                                                                auto</h2>
+                                                            <ul class="vertical menu">
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/40"
+                                                                       data-drupal-link-system-path="taxonomy/term/40">Drive</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/32"
+                                                                       data-drupal-link-system-path="taxonomy/term/32">Continental</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/31"
+                                                                       data-drupal-link-system-path="taxonomy/term/31">Firebird</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/36"
+                                                                       data-drupal-link-system-path="taxonomy/term/36">GT350</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/37"
+                                                                       data-drupal-link-system-path="taxonomy/term/37">Parisienne</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/9"
+                                                                       data-drupal-link-system-path="taxonomy/term/9">Vintage</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="medium-6 large-10 column">
+                                                    <div id="block-views-block-portal-block-mega-menu-block-4"
+                                                         class="block block-views views-blockportal-block-mega-menu-block-4 views-element-container">
+                                                        <div class="inner">
+                                                            <div class="content clearfix">
+                                                                <div>
+                                                                    <div class="block-mega-menu js-view-dom-id-e48c406af485e64f0aea2097746e6504a933171c846a77c7fbbcf9098f183511">
+                                                                        <div class="row large-up-3 xlarge-up-4 xxlarge-up-5">
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/38"><img
+                                                                                            src="../../assets/img/general/auto_5.jpg?itok=lDOucxyP"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Maecenas diam risus, ullamcorper quis adipiscing quis."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/5"
+                                                                                                            hreflang="en">auto</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/38"
+                                                                                       hreflang="en">Maecenas
+                                                                                        diam risus,
+                                                                                        ullamcorper quis
+                                                                                        adipiscing
+                                                                                        quis.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/33"><img
+                                                                                            src="../../assets/img/general/auto_2.jpg?itok=FuoEY9gT"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Curabitur quis mi in ante auctor ullam sed a magna mauris."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/5"
+                                                                                                            hreflang="en">auto</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/33"
+                                                                                       hreflang="en">Curabitur
+                                                                                        quis mi in ante
+                                                                                        auctor ullam sed
+                                                                                        a magna
+                                                                                        mauris.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/13"><img
+                                                                                            src="../../assets/img/general/auto_8.jpg?itok=-lAqk02h"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Nullam egestas viverra mauris, non turpis imperdiet vel."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/5"
+                                                                                                            hreflang="en">auto</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/13"
+                                                                                       hreflang="en">Nullam
+                                                                                        egestas viverra
+                                                                                        mauris, non
+                                                                                        turpis imperdiet
+                                                                                        vel.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/3"><img
+                                                                                            src="../../assets/img/general/auto_4.jpg?itok=VQJFJo7I"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Curabitur neque sem, luctus et ullam corper nec."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/5"
+                                                                                                            hreflang="en">auto</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/3"
+                                                                                       hreflang="en">Curabitur
+                                                                                        neque sem,
+                                                                                        luctus et ullam
+                                                                                        corper nec.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/49"><img
+                                                                                            src="../../assets/img/general/auto_9.jpg?itok=1do00lzp"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Nullam hendrerit, arcu quis suscipit ornare, sem ipsum."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/5"
+                                                                                                            hreflang="en">auto</a></span>
+                                                                                    Jan 05, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/49"
+                                                                                       hreflang="en">Nullam
+                                                                                        hendrerit, arcu
+                                                                                        quis suscipit
+                                                                                        ornare, sem
+                                                                                        ipsum.</a></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/taxonomy/term/4">Life</a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <div id="block-megamenumergelife"
+                                         class="block block-custom block-merging merging-horizontal ">
+                                        <div class="inner  without-padding without-collapse">
+                                            <div class="unexpended row uncollapse">
+                                                <div class="medium-6 large-2 column">
+                                                    <nav role="navigation"
+                                                         aria-labelledby="block-megamenulife-menu"
+                                                         id="block-megamenulife" class="block">
+                                                        <div class="inner"><h2 class="visually-hidden"
+                                                                               id="block-megamenulife-menu">
+                                                            Mega menu - life</h2>
+                                                            <ul class="vertical menu">
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/7"
+                                                                       data-drupal-link-system-path="taxonomy/term/7">Leisure</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/43"
+                                                                       data-drupal-link-system-path="taxonomy/term/43">Music</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/39"
+                                                                       data-drupal-link-system-path="taxonomy/term/39">Night
+                                                                        life</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/8"
+                                                                       data-drupal-link-system-path="taxonomy/term/8">Trend</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/41"
+                                                                       data-drupal-link-system-path="taxonomy/term/41">Wedding</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/28"
+                                                                       data-drupal-link-system-path="taxonomy/term/28">Weekend</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="medium-6 large-10 column">
+                                                    <div id="block-views-block-portal-block-mega-menu-block-5"
+                                                         class="block block-views views-blockportal-block-mega-menu-block-5 views-element-container">
+                                                        <div class="inner">
+                                                            <div class="content clearfix">
+                                                                <div>
+                                                                    <div class="block-mega-menu js-view-dom-id-6b0171d84312aa30ab66696baa77220bbd7b28fd0ac39e8586c0b25e3e1efed8">
+                                                                        <div class="row large-up-3 xlarge-up-4 xxlarge-up-5">
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/24"><img
+                                                                                            src="../../assets/img/general/life_5.jpg?itok=UHlKQN5B"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Pellentesque ultrices pulvinar ante id pharetra."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/4"
+                                                                                                            hreflang="en">life</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/24"
+                                                                                       hreflang="en">Pellentesque
+                                                                                        ultrices
+                                                                                        pulvinar ante id
+                                                                                        pharetra.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/19"><img
+                                                                                            src="../../assets/img/general/life_1.jpg?itok=DB5R7aLA"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Morbi gravida pulvinar ante id pretium metus."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/4"
+                                                                                                            hreflang="en">life</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/19"
+                                                                                       hreflang="en">Morbi
+                                                                                        gravida pulvinar
+                                                                                        ante id pretium
+                                                                                        metus.</a></h4>
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/14"><img
+                                                                                            src="../../assets/img/general/life_4.jpg?itok=T_mJvww_"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="In ut dolor vel ligula tincidunt consectetur eget ac eros."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/4"
+                                                                                                            hreflang="en">life</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/14"
+                                                                                       hreflang="en">In
+                                                                                        ut dolor vel
+                                                                                        ligula tincidunt
+                                                                                        consectetur eget
+                                                                                        ac eros.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/9"><img
+                                                                                            src="../../assets/img/general/life_3.jpg?itok=bJZPKwet"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Nunc facilisis ornare metus vel euismod."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/4"
+                                                                                                            hreflang="en">life</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/9"
+                                                                                       hreflang="en">Nunc
+                                                                                        facilisis ornare
+                                                                                        metus vel
+                                                                                        euismod.</a>
+                                                                                </h4></div>
+                                                                            <div class="column">
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/53"><img
+                                                                                            src="../../assets/img/general/life_9.jpg?itok=w7T1B1E8"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Aliquam sagittis mauris ut nisl laoreet et condimentum."
+                                                                                            typeof="foaf:Image"/>
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/4"
+                                                                                                            hreflang="en">life</a></span>
+                                                                                    Jan 05, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/53"
+                                                                                       hreflang="en">Aliquam
+                                                                                        sagittis mauris
+                                                                                        ut nisl laoreet
+                                                                                        et
+                                                                                        condimentum.</a>
+                                                                                </h4></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/taxonomy/term/3">Travel</a>
+                            <ul class="mega-menu">
+                                <li>
+                                    <div id="block-megamenumergetravel"
+                                         class="block block-custom block-merging merging-horizontal ">
+                                        <div class="inner  without-padding without-collapse">
+                                            <div class="unexpended row uncollapse">
+                                                <div class="medium-6 large-2 column">
+                                                    <nav role="navigation"
+                                                         aria-labelledby="block-megamenutravel-menu"
+                                                         id="block-megamenutravel" class="block">
+                                                        <div class="inner">
+                                                            <h2 class="visually-hidden"
+                                                                id="block-megamenutravel-menu">Mega menu
+                                                                - travel</h2>
+                                                            <ul class="vertical menu">
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/141">Adventure</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/6"
+                                                                       data-drupal-link-system-path="taxonomy/term/6">Destination</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/10"
+                                                                       data-drupal-link-system-path="taxonomy/term/10">Explore</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/12"
+                                                                       data-drupal-link-system-path="taxonomy/term/12">London</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/13"
+                                                                       data-drupal-link-system-path="taxonomy/term/13">New
+                                                                        York</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="/demo/portal/news/taxonomy/term/45"
+                                                                       data-drupal-link-system-path="taxonomy/term/45">Wild
+                                                                        life</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </nav>
+                                                </div>
+                                                <div class="medium-6 large-10 column">
+                                                    <div id="block-views-block-portal-block-mega-menu-block-6"
+                                                         class="block block-views views-blockportal-block-mega-menu-block-6 views-element-container">
+                                                        <div class="inner">
+                                                            <div class="content clearfix">
+                                                                <div>
+                                                                    <div class="block-mega-menu js-view-dom-id-9aa444b8c6b3a8693b73efd25c2a3ae9f6fd6b8a8df857d91f99cc4d24d42257">
+                                                                        <div class="row large-up-3 xlarge-up-4 xxlarge-up-5">
+                                                                            <div class="column">
+
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/35"><img
+                                                                                            src="../../assets/img/general/travel_5.jpg?itok=ga-Avt6A"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Proin sed elit eget sem pretium dignissim ellentesque."
+                                                                                            typeof="foaf:Image"/>
+
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/3"
+                                                                                                            hreflang="en">travel</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/35"
+                                                                                       hreflang="en">Proin
+                                                                                        sed elit eget
+                                                                                        sem pretium
+                                                                                        dignissim
+                                                                                        ellentesque.</a>
+                                                                                </h4>
+
+                                                                            </div>
+                                                                            <div class="column">
+
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/30"><img
+                                                                                            src="../../assets/img/general/travel_3.jpg?itok=zy24xc93"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Aliquam turpis tellus, tristique vestibulum molestie ut."
+                                                                                            typeof="foaf:Image"/>
+
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/3"
+                                                                                                            hreflang="en">travel</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/30"
+                                                                                       hreflang="en">Aliquam
+                                                                                        turpis tellus,
+                                                                                        tristique
+                                                                                        vestibulum
+                                                                                        molestie ut.</a>
+                                                                                </h4>
+
+                                                                            </div>
+                                                                            <div class="column">
+
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/25"><img
+                                                                                            src="../../assets/img/general/travel_8.jpg?itok=gvmCDQMH"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Nulla quis dui dui, at consectetur turpis."
+                                                                                            typeof="foaf:Image"/>
+
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/3"
+                                                                                                            hreflang="en">travel</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/25"
+                                                                                       hreflang="en">Nulla
+                                                                                        quis dui dui, at
+                                                                                        consectetur
+                                                                                        turpis.</a></h4>
+
+                                                                            </div>
+                                                                            <div class="column">
+
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/5"><img
+                                                                                            src="../../assets/img/general/travel_2.jpg?itok=VGJHZ73-"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Curabitur sit amet sapien lorem, vitae hendrerit tellus."
+                                                                                            typeof="foaf:Image"/>
+
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/3"
+                                                                                                            hreflang="en">travel</a></span>
+                                                                                    Jan 06, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/5"
+                                                                                       hreflang="en">Curabitur
+                                                                                        sit amet sapien
+                                                                                        lorem, vitae
+                                                                                        hendrerit
+                                                                                        tellus.</a></h4>
+
+                                                                            </div>
+                                                                            <div class="column">
+
+                                                                                <div class="image-default">
+                                                                                    <a href="/demo/portal/news/node/51"><img
+                                                                                            src="../../assets/img/general/travel_9.jpg?itok=cBez5etr"
+                                                                                            width="210"
+                                                                                            height="210"
+                                                                                            alt="Aliquam egestas pellentesque fringilla donec sit."
+                                                                                            typeof="foaf:Image"/>
+
+                                                                                    </a>
+                                                                                </div>
+                                                                                <div class="meta">
+                                                                                                    <span class="float-right"><a
+                                                                                                            href="/demo/portal/news/taxonomy/term/3"
+                                                                                                            hreflang="en">travel</a></span>
+                                                                                    Jan 05, 2017
+                                                                                </div>
+                                                                                <h4>
+                                                                                    <a href="/demo/portal/news/node/51"
+                                                                                       hreflang="en">Aliquam
+                                                                                        egestas
+                                                                                        pellentesque
+                                                                                        fringilla donec
+                                                                                        sit.</a></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://www.esors.com/demo/portal/news/blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="header-bottom" class="show-for-medium">
+        <div class="inner wrapper">
+            <div class="row collapse">
+                <div id="menu-secondary" class="large-8 column show-for-large">
+                    <nav role="navigation" aria-labelledby="block-hottopic-menu" id="block-hottopic"
+                         class="block">
+                        <div class="inner">
+                            <h2 id="block-hottopic-menu">Hot topic:</h2>
+                            <ul class="menu">
+                                <li>
+                                    <a href="/demo/portal/news/taxonomy/term/26"
+                                       data-drupal-link-system-path="taxonomy/term/26">City</a>
+                                </li>
+                                <li>
+                                    <a href="/demo/portal/news/taxonomy/term/6"
+                                       data-drupal-link-system-path="taxonomy/term/6">Destination</a>
+                                </li>
+                                <li>
+                                    <a href="/demo/portal/news/taxonomy/term/39"
+                                       data-drupal-link-system-path="taxonomy/term/39">Night life</a>
+                                </li>
+                                <li>
+                                    <a href="/demo/portal/news/taxonomy/term/14"
+                                       data-drupal-link-system-path="taxonomy/term/14">Technology</a>
+                                </li>
+                                <li>
+                                    <a href="/demo/portal/news/taxonomy/term/9"
+                                       data-drupal-link-system-path="taxonomy/term/9">Vintage</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div id="site-search" class="medium-6 large-4 column">
+                    <form action="/demo/portal/news/search/node" method="get" id="search-block-form"
+                          accept-charset="UTF-8">
+                        <div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys">
+                            <label for="edit-keys"><span class="fa fa-search"></span></label>
+                            <input title="Enter the terms you wish to search for."
+                                   placeholder="Search ..." data-drupal-selector="edit-keys"
+                                   type="search" id="edit-keys" name="keys" value="" size="15"
+                                   maxlength="128" class="form-search"/>
+                        </div>
+                        <div data-drupal-selector="edit-actions"
+                             class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input
+                                data-drupal-selector="edit-submit" type="submit" id="edit-submit"
+                                value="" class="button js-form-submit form-submit"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="large reveal fast" id="reveal-search" data-reveal data-close-on-click="true"
+         data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <form action="/demo/portal/news/search/node" method="get" id="search-block-form"
+              accept-charset="UTF-8">
+            <div class="js-form-item form-item js-form-type-search form-item-keys js-form-item-keys">
+                <label for="edit-keys"><span class="fa fa-search"></span></label>
+                <input title="Enter the terms you wish to search for." placeholder="Search ..."
+                       data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys"
+                       value="" size="15" maxlength="128" class="form-search"/>
+            </div>
+            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"
+                 id="edit-actions"><input data-drupal-selector="edit-submit" type="submit"
+                                          id="edit-submit" value=""
+                                          class="button js-form-submit form-submit"/>
+            </div>
+        </form>
+    </div>
+</header>

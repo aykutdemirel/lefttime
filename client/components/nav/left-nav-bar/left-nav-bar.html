@@ -1,20 +1,105 @@
-﻿<nav>
-    <div class="menu">
-        <div class="menu-title">
-            <span>MENU</span>
-            <a class="leftSideCloseBtn pull-right">
-                <i class="fa pull-left fa-arrow-left"></i>
-                <span class="menu-close pull-left">Kapat</span>
+﻿<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+    <div id="menu-mobile">
+        <div class="site-info text-center">
+            <div class="site-logo">
+                <a href="/demo/portal/news/" title="Home" rel="home">
+                    <img src="../../assets/img/general/logo_0.png" alt="Home"/>
+                </a>
+            </div>
+            <div class="site-slogan">
+                Get the latest news, trend &amp; hot destination!
+            </div>
+        </div>
+        <div class="menu-sub text-center">
+            <a class="button rounded login" href="/demo/portal/news/user">Login</a>
+            <a class="button rounded register" href="/demo/portal/news/user/register">Register</a>
+            <a class="button rounded search" data-toggle="reveal-search">Search</a>
+            <a class="button rounded close" aria-label="Close menu" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
             </a>
         </div>
-
-        <div class="clear"></div>
-        <ul>
-            <li ng-class="{active: vm.active(item.route)}" ng-repeat="item in vm.menu">
-                <a ng-href="{{item.link}}">{{item.title}}</a>
-            </li>
-        </ul>
-
+        <nav role="navigation" aria-labelledby="block-mainnavigationmobile-menu" id="block-mainnavigationmobile"
+             class="block">
+            <div class="inner"><h2 id="block-mainnavigationmobile-menu">Main navigation mobile</h2>
+                <ul class="vertical menu" data-accordion-menu>
+                    <li>
+                        <a href="/demo/portal/news/" data-drupal-link-system-path="&lt;front&gt;"
+                           class="is-active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Features</a>
+                        <ul class="nested vertical menu">
+                            <li>
+                                <a href="/demo/portal/news/post" data-drupal-link-system-path="post">Front page
+                                    by default</a>
+                            </li>
+                            <li>
+                                <a href="/demo/portal/news/post-list" data-drupal-link-system-path="post-list">Front
+                                    page by list</a>
+                            </li>
+                            <li>
+                                <a href="/demo/portal/news/post-category"
+                                   data-drupal-link-system-path="post-category" class="is-active">Front page by
+                                    category</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/demo/portal/news/taxonomy/term/1"
+                           data-drupal-link-system-path="taxonomy/term/1">News</a>
+                    </li>
+                    <li>
+                        <a href="/demo/portal/news/taxonomy/term/2"
+                           data-drupal-link-system-path="taxonomy/term/2">Business</a>
+                    </li>
+                    <li>
+                        <a href="/demo/portal/news/taxonomy/term/5"
+                           data-drupal-link-system-path="taxonomy/term/5">Auto</a>
+                    </li>
+                    <li>
+                        <a href="/demo/portal/news/taxonomy/term/4"
+                           data-drupal-link-system-path="taxonomy/term/4">Life</a>
+                    </li>
+                    <li>
+                        <a href="/demo/portal/news/taxonomy/term/3"
+                           data-drupal-link-system-path="taxonomy/term/3">Travel</a>
+                    </li>
+                    <li>
+                        <a href="/demo/portal/news/blog" data-drupal-link-system-path="blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="social-media">
+            <div id="block-socialmedialinks"
+                 class="block block-social-media-links social-media-links-block block-social-media-links">
+                <div class="inner">
+                    <div class="content clearfix">
+                        <ul class="platforms inline horizontal">
+                            <li>
+                                <a href="https://www.facebook.com/https://www.facebook.com/example">
+                                    <span class='fa fa-facebook fa-lg'></span>
+                                </a></li>
+                            <li>
+                                <a href="https://plus.google.com/https://plus.google.com/example">
+                                    <span class='fa fa-google-plus fa-lg'></span>
+                                </a></li>
+                            <li>
+                                <a href="http://www.linkedin.com/http://www.linkedin.com/example">
+                                    <span class='fa fa-linkedin fa-lg'></span>
+                                </a></li>
+                            <li>
+                                <a href="http://www.pinterest.com/http://www.pinterest.com/example">
+                                    <span class='fa fa-pinterest fa-lg'></span>
+                                </a></li>
+                            <li>
+                                <a href="https://www.twitter.com/https://www.twitter.com/example">
+                                    <span class='fa fa-twitter fa-lg'></span>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</nav>
-
+</div>
